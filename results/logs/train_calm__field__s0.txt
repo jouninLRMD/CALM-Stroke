@@ -1,0 +1,45 @@
+device cuda NVIDIA RTX 4000 Ada Generation
+src/calm_stroke_model.py:136: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.fusion = nn.TransformerEncoder(layer, n_layers)
+
+[calm__field__s0] unit train1.5T_test3T: train 459 labelled + 817 unlabelled, val 81, test 178
+  ep   0 train 2.1024 | val ord 0.4171 AUC 0.847 | 122s
+  ep   1 train 1.9161 | val ord 0.4170 AUC 0.847 | 45s
+  ep   2 train 1.7842 | val ord 0.4257 AUC 0.847 | 45s
+  ep   3 train 1.7801 | val ord 0.4161 AUC 0.849 | 45s
+  ep   4 train 1.6340 | val ord 0.4125 AUC 0.853 | 45s
+  ep   5 train 1.5472 | val ord 0.4237 AUC 0.856 | 45s
+  ep   6 train 1.5045 | val ord 0.4206 AUC 0.849 | 45s
+  ep   7 train 1.4267 | val ord 0.4077 AUC 0.863 | 45s
+  ep   8 train 1.2812 | val ord 0.4051 AUC 0.865 | 45s
+  ep   9 train 1.2125 | val ord 0.4149 AUC 0.865 | 45s
+  ep  10 train 1.1382 | val ord 0.4101 AUC 0.854 | 45s
+  ep  11 train 1.0827 | val ord 0.3926 AUC 0.857 | 45s
+  ep  12 train 1.1089 | val ord 0.3836 AUC 0.866 | 45s
+  ep  13 train 1.0487 | val ord 0.3923 AUC 0.877 | 45s
+  ep  14 train 1.0262 | val ord 0.3896 AUC 0.879 | 45s
+  ep  15 train 0.9813 | val ord 0.4245 AUC 0.872 | 45s
+  ep  16 train 1.0163 | val ord 0.4019 AUC 0.876 | 45s
+  ep  17 train 0.9444 | val ord 0.4182 AUC 0.853 | 45s
+  ep  18 train 0.9395 | val ord 0.3909 AUC 0.882 | 45s
+  ep  19 train 0.9636 | val ord 0.3783 AUC 0.857 | 45s
+  ep  20 train 0.9643 | val ord 0.3917 AUC 0.854 | 45s
+  ep  21 train 0.9530 | val ord 0.3782 AUC 0.856 | 45s
+  ep  22 train 0.9033 | val ord 0.3755 AUC 0.873 | 45s
+  ep  23 train 0.9024 | val ord 0.3737 AUC 0.851 | 45s
+  ep  24 train 0.8881 | val ord 0.3867 AUC 0.852 | 45s
+  ep  25 train 0.8523 | val ord 0.3848 AUC 0.832 | 45s
+  ep  26 train 0.9054 | val ord 0.3675 AUC 0.863 | 45s
+  ep  27 train 0.8921 | val ord 0.4002 AUC 0.835 | 45s
+  ep  28 train 0.8691 | val ord 0.3720 AUC 0.886 | 45s
+  ep  29 train 0.8331 | val ord 0.3836 AUC 0.855 | 45s
+  ep  30 train 0.8308 | val ord 0.3981 AUC 0.846 | 45s
+  ep  31 train 0.8179 | val ord 0.4021 AUC 0.843 | 45s
+  ep  32 train 0.8395 | val ord 0.3847 AUC 0.872 | 45s
+  ep  33 train 0.7742 | val ord 0.3758 AUC 0.871 | 45s
+  ep  34 train 0.8375 | val ord 0.3833 AUC 0.871 | 45s
+  ep  35 train 0.8040 | val ord 0.3848 AUC 0.875 | 45s
+  ep  36 train 0.8205 | val ord 0.4114 AUC 0.855 | 45s
+[calm__field__s0] unit train1.5T_test3T: test AUC 0.865 (n=178) | 29.7 min
+
+Saved results/oof/calm__field__s0.csv

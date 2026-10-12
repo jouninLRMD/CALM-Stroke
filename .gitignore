@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/*
+!data/soop_manifest.csv
+results/logs/evaluate.txt
+results/logs/paper_outputs.txt
+results/logs/explain.txt
+*.pt

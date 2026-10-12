@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "CALM-Stroke: clinically anchored, lesion-aware deep learning on diffusion MRI for predicting functional outcome after acute ischemic stroke"
+authors:
+  - family-names: Mercado-Diaz
+    given-names: Luis R.
+    affiliation: University of Connecticut
+  - family-names: Donado Pinto
+    given-names: Laura Sofía
+    affiliation: Universidad Internacional de La Rioja
+  - family-names: Barrera-Causil
+    given-names: Carlos
+    affiliation: Instituto Tecnológico Metropolitano
+  - family-names: Posada-Quintero
+    given-names: Hugo F.
+    affiliation: University of Connecticut
+repository-code: "https://github.com/jouninLRMD/CALM-Stroke"
+license: GPL-3.0
+type: software

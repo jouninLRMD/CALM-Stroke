@@ -1,0 +1,34 @@
+model,seed,fold0,fold1,fold2,fold3,fold4
+Clinical (R0),s0,0.723,0.828,0.746,0.739,0.747
+Clinical + volume (R1),s0,0.748,0.835,0.798,0.802,0.807
+Clinical + lesion (R1b),s0,0.759,0.828,0.789,0.805,0.816
+Clinical + topography (R2b),s0,0.753,0.805,0.801,0.805,0.828
+"3D ResNet-18, no anchor",s0,0.734,0.836,0.781,0.767,0.725
+3D ResNet-18 + anchor,s0,0.739,0.819,0.804,0.769,0.807
+CALM-3D (from scratch),s0,0.73,0.848,0.795,0.815,0.777
+CALM-3D (from scratch),s1,0.765,0.832,0.789,0.828,0.815
+CALM-3D (from scratch),s2,0.772,0.814,0.794,0.799,0.817
+2.5D MIL + anchor,s0,0.796,0.86,0.827,0.795,0.83
+2.5D MIL + anchor,s1,0.767,0.889,0.798,0.805,0.822
+2.5D MIL + anchor,s2,0.755,0.873,0.817,0.827,0.788
+2.5D MIL + anchor,s3,0.788,0.878,0.782,0.786,0.819
+2.5D MIL + anchor,s4,0.799,0.86,0.817,0.799,0.803
+2.5D MIL + lesion anchor,s0,0.771,0.835,0.797,0.816,0.859
+2.5D MIL + lesion anchor,s1,0.794,0.848,0.799,0.826,0.824
+2.5D MIL + lesion anchor,s2,0.776,0.817,0.789,0.808,0.812
+2.5D MIL + lesion anchor,s3,0.77,0.831,0.792,0.824,0.82
+2.5D MIL + lesion anchor,s4,0.763,0.84,0.813,0.783,0.836
+"CALM-Stroke, no anchor",s0,0.732,0.841,0.782,0.77,0.816
+"CALM-Stroke, no anchor",s1,0.719,0.81,0.782,0.817,0.776
+"CALM-Stroke, no anchor",s2,0.713,0.793,0.824,0.851,0.86
+"CALM-Stroke, no lesion head",s0,0.782,0.848,0.825,0.807,0.836
+"CALM-Stroke, no lesion head",s1,0.808,0.856,0.796,0.833,0.803
+"CALM-Stroke, no lesion head",s2,0.735,0.852,0.797,0.832,0.786
+"CALM-Stroke, no auxiliary tasks",s0,0.789,0.825,0.821,0.841,0.845
+"CALM-Stroke, no auxiliary tasks",s1,0.767,0.88,0.824,0.83,0.825
+"CALM-Stroke, no auxiliary tasks",s2,0.779,0.882,0.796,0.834,0.803
+CALM-Stroke,s0,0.777,0.85,0.812,0.814,0.835
+CALM-Stroke,s1,0.792,0.864,0.804,0.798,0.788
+CALM-Stroke,s2,0.768,0.893,0.752,0.799,0.815
+CALM-Stroke,s3,0.766,0.867,0.851,0.821,0.799
+CALM-Stroke,s4,0.764,0.891,0.78,0.763,0.806

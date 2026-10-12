@@ -1,0 +1,13 @@
+model,Achieva,Ingenia Ambition X,Ingenia Elition X,Intera
+baseline_I1_volume_only,0.764,0.721,0.768,0.74
+baseline_I2_topography_only,0.731,0.699,0.76,0.808
+baseline_R0_clinical,0.772,0.736,0.775,0.776
+baseline_R1_clin_volume,0.826,0.779,0.831,0.801
+baseline_R1b_clin_vol_chronic_radc,0.817,0.778,0.804,0.815
+baseline_R2a_clin_vol_territory,0.813,0.76,0.823,0.812
+baseline_R2b_clin_vol_topography,0.823,0.784,0.798,0.848
+calm,0.811,0.808,0.825,0.787
+calm25d,0.838,0.818,0.828,0.857
+resnet3d,0.769,0.77,0.773,0.796
+slice25d,0.83,0.807,0.809,0.846
+slice25d_lesanchor,0.832,0.778,0.812,0.821

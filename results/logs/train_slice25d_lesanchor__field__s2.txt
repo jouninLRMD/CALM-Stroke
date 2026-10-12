@@ -1,0 +1,24 @@
+device cuda NVIDIA RTX 4000 Ada Generation
+
+[slice25d_lesanchor__field__s2] unit train1.5T_test3T: train 459 labelled + 0 unlabelled, val 81, test 178
+  ep   0 train 0.3935 | val ord 0.4387 AUC 0.794 | 51s
+  ep   1 train 0.3835 | val ord 0.4402 AUC 0.794 | 5s
+  ep   2 train 0.3668 | val ord 0.4322 AUC 0.799 | 5s
+  ep   3 train 0.3614 | val ord 0.4493 AUC 0.783 | 5s
+  ep   4 train 0.3714 | val ord 0.4968 AUC 0.795 | 5s
+  ep   5 train 0.3547 | val ord 0.4572 AUC 0.805 | 5s
+  ep   6 train 0.3385 | val ord 0.4691 AUC 0.814 | 5s
+  ep   7 train 0.3270 | val ord 0.4081 AUC 0.852 | 5s
+  ep   8 train 0.3298 | val ord 0.4701 AUC 0.825 | 5s
+  ep   9 train 0.3209 | val ord 0.5499 AUC 0.838 | 5s
+  ep  10 train 0.3092 | val ord 0.4559 AUC 0.814 | 5s
+  ep  11 train 0.3046 | val ord 0.5189 AUC 0.784 | 5s
+  ep  12 train 0.2876 | val ord 0.4346 AUC 0.838 | 5s
+  ep  13 train 0.3007 | val ord 0.8349 AUC 0.813 | 5s
+  ep  14 train 0.2981 | val ord 0.4448 AUC 0.858 | 5s
+  ep  15 train 0.2821 | val ord 0.4130 AUC 0.841 | 5s
+  ep  16 train 0.2704 | val ord 0.4647 AUC 0.840 | 5s
+  ep  17 train 0.2612 | val ord 0.5132 AUC 0.799 | 5s
+[slice25d_lesanchor__field__s2] unit train1.5T_test3T: test AUC 0.844 (n=178) | 2.6 min
+
+Saved results/oof/slice25d_lesanchor__field__s2.csv

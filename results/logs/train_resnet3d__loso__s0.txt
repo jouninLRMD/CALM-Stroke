@@ -1,0 +1,108 @@
+device cuda NVIDIA RTX 4000 Ada Generation
+
+[resnet3d__loso__s0] unit Ingenia Ambition X: train 309 labelled + 0 unlabelled, val 55, test 354
+  ep   0 train 0.4031 | val ord 0.4364 AUC 0.812 | 74s
+  ep   1 train 0.4267 | val ord 0.4360 AUC 0.813 | 7s
+  ep   2 train 0.4239 | val ord 0.4330 AUC 0.818 | 7s
+  ep   3 train 0.4096 | val ord 0.4548 AUC 0.812 | 7s
+  ep   4 train 0.4424 | val ord 0.4611 AUC 0.818 | 7s
+  ep   5 train 0.4422 | val ord 0.4188 AUC 0.849 | 7s
+  ep   6 train 0.4349 | val ord 0.4388 AUC 0.812 | 7s
+  ep   7 train 0.4496 | val ord 0.4191 AUC 0.841 | 7s
+  ep   8 train 0.3961 | val ord 1.4438 AUC 0.715 | 7s
+  ep   9 train 0.4312 | val ord 0.4263 AUC 0.817 | 7s
+  ep  10 train 0.4048 | val ord 0.4124 AUC 0.850 | 7s
+  ep  11 train 0.4004 | val ord 0.3996 AUC 0.855 | 7s
+  ep  12 train 0.3979 | val ord 0.4161 AUC 0.865 | 7s
+  ep  13 train 0.4265 | val ord 0.4027 AUC 0.862 | 7s
+  ep  14 train 0.4232 | val ord 0.4348 AUC 0.877 | 7s
+  ep  15 train 0.4156 | val ord 0.3851 AUC 0.862 | 7s
+  ep  16 train 0.3685 | val ord 0.3825 AUC 0.877 | 7s
+  ep  17 train 0.4015 | val ord 0.4038 AUC 0.853 | 7s
+  ep  18 train 0.4007 | val ord 0.4010 AUC 0.858 | 7s
+  ep  19 train 0.3935 | val ord 0.4150 AUC 0.837 | 7s
+  ep  20 train 0.4080 | val ord 0.3780 AUC 0.894 | 7s
+  ep  21 train 0.3888 | val ord 0.3776 AUC 0.899 | 7s
+  ep  22 train 0.3751 | val ord 0.3922 AUC 0.877 | 7s
+  ep  23 train 0.4099 | val ord 0.3812 AUC 0.861 | 7s
+  ep  24 train 0.3629 | val ord 0.3823 AUC 0.870 | 7s
+  ep  25 train 0.3963 | val ord 0.3557 AUC 0.894 | 7s
+  ep  26 train 0.3686 | val ord 0.3822 AUC 0.883 | 7s
+  ep  27 train 0.3577 | val ord 0.3829 AUC 0.863 | 7s
+  ep  28 train 0.3909 | val ord 0.3891 AUC 0.867 | 7s
+  ep  29 train 0.3795 | val ord 0.3740 AUC 0.877 | 7s
+  ep  30 train 0.3698 | val ord 0.3913 AUC 0.873 | 7s
+  ep  31 train 0.3871 | val ord 0.3909 AUC 0.863 | 7s
+  ep  32 train 0.3692 | val ord 0.3499 AUC 0.907 | 7s
+  ep  33 train 0.3550 | val ord 0.3892 AUC 0.847 | 7s
+  ep  34 train 0.3267 | val ord 0.3856 AUC 0.878 | 7s
+  ep  35 train 0.3621 | val ord 0.4164 AUC 0.850 | 7s
+  ep  36 train 0.3475 | val ord 0.3803 AUC 0.866 | 7s
+  ep  37 train 0.3512 | val ord 0.3854 AUC 0.883 | 7s
+  ep  38 train 0.3344 | val ord 0.4110 AUC 0.862 | 7s
+  ep  39 train 0.3252 | val ord 0.4427 AUC 0.828 | 7s
+  ep  40 train 0.3268 | val ord 0.3971 AUC 0.871 | 7s
+  ep  41 train 0.3010 | val ord 0.4141 AUC 0.826 | 7s
+  ep  42 train 0.3054 | val ord 0.3841 AUC 0.899 | 7s
+[resnet3d__loso__s0] unit Ingenia Ambition X: test AUC 0.770 (n=354) | 7.1 min
+
+[resnet3d__loso__s0] unit Achieva: train 421 labelled + 0 unlabelled, val 74, test 223
+  ep   0 train 0.4056 | val ord 0.4417 AUC 0.742 | 50s
+  ep   1 train 0.4130 | val ord 0.4436 AUC 0.724 | 7s
+  ep   2 train 0.4435 | val ord 0.4448 AUC 0.752 | 7s
+  ep   3 train 0.4133 | val ord 0.7793 AUC 0.669 | 7s
+  ep   4 train 0.4377 | val ord 0.4896 AUC 0.777 | 7s
+  ep   5 train 0.4055 | val ord 0.4550 AUC 0.755 | 7s
+  ep   6 train 0.4133 | val ord 0.4493 AUC 0.754 | 7s
+  ep   7 train 0.3996 | val ord 0.4623 AUC 0.798 | 7s
+  ep   8 train 0.3970 | val ord 0.4433 AUC 0.737 | 7s
+  ep   9 train 0.4151 | val ord 0.4484 AUC 0.769 | 7s
+  ep  10 train 0.4025 | val ord 0.4578 AUC 0.770 | 7s
+[resnet3d__loso__s0] unit Achieva: test AUC 0.769 (n=223) | 2.4 min
+
+[resnet3d__loso__s0] unit Ingenia Elition X: train 532 labelled + 0 unlabelled, val 94, test 92
+  ep   0 train 0.4284 | val ord 0.4206 AUC 0.769 | 46s
+  ep   1 train 0.4389 | val ord 0.4141 AUC 0.798 | 8s
+  ep   2 train 0.4540 | val ord 0.4445 AUC 0.810 | 7s
+  ep   3 train 0.4273 | val ord 0.4167 AUC 0.776 | 7s
+  ep   4 train 0.4397 | val ord 0.4014 AUC 0.811 | 7s
+  ep   5 train 0.4286 | val ord 0.4006 AUC 0.812 | 7s
+  ep   6 train 0.4478 | val ord 0.4003 AUC 0.799 | 7s
+  ep   7 train 0.4605 | val ord 0.4035 AUC 0.800 | 7s
+  ep   8 train 0.4148 | val ord 0.4037 AUC 0.801 | 8s
+  ep   9 train 0.4074 | val ord 0.4082 AUC 0.798 | 7s
+  ep  10 train 0.4278 | val ord 0.4819 AUC 0.793 | 7s
+  ep  11 train 0.4222 | val ord 0.4007 AUC 0.807 | 7s
+  ep  12 train 0.4379 | val ord 0.4103 AUC 0.804 | 7s
+  ep  13 train 0.4164 | val ord 0.3933 AUC 0.818 | 7s
+  ep  14 train 0.3948 | val ord 0.3895 AUC 0.819 | 8s
+  ep  15 train 0.4036 | val ord 0.3942 AUC 0.821 | 7s
+  ep  16 train 0.3953 | val ord 0.4008 AUC 0.834 | 7s
+  ep  17 train 0.4196 | val ord 0.4441 AUC 0.819 | 7s
+  ep  18 train 0.4462 | val ord 0.4020 AUC 0.819 | 7s
+  ep  19 train 0.4160 | val ord 0.3929 AUC 0.819 | 7s
+  ep  20 train 0.3967 | val ord 0.4267 AUC 0.826 | 7s
+  ep  21 train 0.3976 | val ord 0.4390 AUC 0.774 | 7s
+  ep  22 train 0.3925 | val ord 0.3946 AUC 0.818 | 7s
+  ep  23 train 0.3957 | val ord 0.3970 AUC 0.832 | 7s
+  ep  24 train 0.4125 | val ord 0.3929 AUC 0.834 | 7s
+[resnet3d__loso__s0] unit Ingenia Elition X: test AUC 0.773 (n=92) | 4.2 min
+
+[resnet3d__loso__s0] unit Intera: train 569 labelled + 0 unlabelled, val 100, test 49
+  ep   0 train 0.4472 | val ord 0.4254 AUC 0.800 | 46s
+  ep   1 train 0.4131 | val ord 0.6928 AUC 0.817 | 7s
+  ep   2 train 0.4335 | val ord 0.4773 AUC 0.820 | 7s
+  ep   3 train 0.4173 | val ord 0.4053 AUC 0.837 | 8s
+  ep   4 train 0.4172 | val ord 0.4574 AUC 0.821 | 7s
+  ep   5 train 0.4346 | val ord 0.5644 AUC 0.828 | 7s
+  ep   6 train 0.4002 | val ord 0.4238 AUC 0.815 | 8s
+  ep   7 train 0.4268 | val ord 0.4149 AUC 0.826 | 8s
+  ep   8 train 0.4398 | val ord 0.4196 AUC 0.817 | 7s
+  ep   9 train 0.4098 | val ord 0.4215 AUC 0.829 | 7s
+  ep  10 train 0.4008 | val ord 0.4549 AUC 0.818 | 7s
+  ep  11 train 0.3987 | val ord 0.4306 AUC 0.821 | 7s
+  ep  12 train 0.4223 | val ord 0.4206 AUC 0.825 | 7s
+  ep  13 train 0.3942 | val ord 0.4825 AUC 0.829 | 7s
+[resnet3d__loso__s0] unit Intera: test AUC 0.796 (n=49) | 3.0 min
+
+Saved results/oof/resnet3d__loso__s0.csv

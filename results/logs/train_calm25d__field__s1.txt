@@ -1,0 +1,21 @@
+device cuda NVIDIA RTX 4000 Ada Generation
+
+[calm25d__field__s1] unit train1.5T_test3T: train 459 labelled + 817 unlabelled, val 81, test 178
+  ep   0 train 2.4783 | val ord 0.4601 AUC 0.754 | 67s
+  ep   1 train 2.0561 | val ord 0.4583 AUC 0.757 | 6s
+  ep   2 train 1.8558 | val ord 0.4434 AUC 0.783 | 6s
+  ep   3 train 1.7743 | val ord 0.4397 AUC 0.783 | 6s
+  ep   4 train 1.4870 | val ord 0.4047 AUC 0.815 | 6s
+  ep   5 train 1.2878 | val ord 0.5620 AUC 0.802 | 6s
+  ep   6 train 1.2130 | val ord 0.4474 AUC 0.812 | 6s
+  ep   7 train 1.1831 | val ord 0.4365 AUC 0.813 | 6s
+  ep   8 train 1.1304 | val ord 0.4462 AUC 0.801 | 6s
+  ep   9 train 1.1726 | val ord 0.4654 AUC 0.791 | 6s
+  ep  10 train 1.1226 | val ord 0.4613 AUC 0.800 | 6s
+  ep  11 train 1.0820 | val ord 0.4054 AUC 0.832 | 6s
+  ep  12 train 1.1380 | val ord 0.4227 AUC 0.832 | 6s
+  ep  13 train 1.1017 | val ord 0.4169 AUC 0.805 | 6s
+  ep  14 train 1.0902 | val ord 0.5159 AUC 0.774 | 6s
+[calm25d__field__s1] unit train1.5T_test3T: test AUC 0.809 (n=178) | 3.1 min
+
+Saved results/oof/calm25d__field__s1.csv

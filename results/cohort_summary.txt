@@ -1,0 +1,9 @@
+Subjects with MRI: 1715
+DWI preprocessing ok: 1715 | QC brain Dice < 0.85: 2
+With participants.tsv metadata (age): 1062 | NIHSS: 1106 | TOAST: 1080
+With discharge mRS: 738 | labelled cohort (mRS + age + NIHSS + DWI ok): 718
+Labelled: poor outcome 337 (46.9%) | with expert mask 606
+Labelled by field: {1.5: 540, 3.0: 178}
+Labelled by scanner: {'Ingenia Ambition X': 354, 'Achieva': 223, 'Ingenia Elition X': 92, 'Intera': 49}
+Fold sizes: {0: 144, 1: 144, 2: 144, 3: 143, 4: 143}
+Unlabelled scans usable for auxiliary training: 997

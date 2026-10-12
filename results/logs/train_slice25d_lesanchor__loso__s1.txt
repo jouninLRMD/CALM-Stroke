@@ -1,0 +1,86 @@
+device cuda NVIDIA RTX 4000 Ada Generation
+
+[slice25d_lesanchor__loso__s1] unit Ingenia Ambition X: train 309 labelled + 0 unlabelled, val 55, test 354
+  ep   0 train 0.3669 | val ord 0.4303 AUC 0.812 | 69s
+  ep   1 train 0.3904 | val ord 0.4298 AUC 0.814 | 5s
+  ep   2 train 0.3654 | val ord 0.4288 AUC 0.820 | 5s
+  ep   3 train 0.3300 | val ord 0.5141 AUC 0.833 | 5s
+  ep   4 train 0.3284 | val ord 0.4134 AUC 0.840 | 5s
+  ep   5 train 0.3147 | val ord 0.5445 AUC 0.836 | 5s
+  ep   6 train 0.3272 | val ord 0.4075 AUC 0.844 | 5s
+  ep   7 train 0.3089 | val ord 0.4569 AUC 0.832 | 5s
+  ep   8 train 0.2907 | val ord 0.4374 AUC 0.845 | 5s
+  ep   9 train 0.2916 | val ord 0.5158 AUC 0.834 | 5s
+  ep  10 train 0.2633 | val ord 0.5754 AUC 0.832 | 5s
+  ep  11 train 0.2593 | val ord 0.5174 AUC 0.847 | 5s
+  ep  12 train 0.2534 | val ord 0.5298 AUC 0.804 | 5s
+  ep  13 train 0.2502 | val ord 0.7737 AUC 0.847 | 5s
+  ep  14 train 0.2345 | val ord 0.5691 AUC 0.849 | 5s
+  ep  15 train 0.2401 | val ord 0.7443 AUC 0.825 | 5s
+  ep  16 train 0.2404 | val ord 0.7258 AUC 0.802 | 5s
+[slice25d_lesanchor__loso__s1] unit Ingenia Ambition X: test AUC 0.768 (n=354) | 3.2 min
+
+[slice25d_lesanchor__loso__s1] unit Achieva: train 421 labelled + 0 unlabelled, val 74, test 223
+  ep   0 train 0.4013 | val ord 0.3767 AUC 0.849 | 51s
+  ep   1 train 0.3885 | val ord 0.3761 AUC 0.851 | 5s
+  ep   2 train 0.3838 | val ord 0.3768 AUC 0.856 | 5s
+  ep   3 train 0.3834 | val ord 0.3791 AUC 0.865 | 5s
+  ep   4 train 0.3529 | val ord 0.3937 AUC 0.842 | 5s
+  ep   5 train 0.3733 | val ord 0.3710 AUC 0.893 | 5s
+  ep   6 train 0.3594 | val ord 0.4471 AUC 0.868 | 5s
+  ep   7 train 0.3670 | val ord 0.4244 AUC 0.861 | 5s
+  ep   8 train 0.3474 | val ord 0.3542 AUC 0.900 | 5s
+  ep   9 train 0.3274 | val ord 0.4011 AUC 0.874 | 5s
+  ep  10 train 0.3353 | val ord 0.3890 AUC 0.902 | 5s
+  ep  11 train 0.3139 | val ord 0.3669 AUC 0.880 | 5s
+  ep  12 train 0.2990 | val ord 0.4370 AUC 0.847 | 5s
+  ep  13 train 0.2845 | val ord 0.3720 AUC 0.857 | 5s
+  ep  14 train 0.2808 | val ord 0.3947 AUC 0.860 | 5s
+  ep  15 train 0.2799 | val ord 0.5137 AUC 0.846 | 5s
+  ep  16 train 0.2864 | val ord 0.4766 AUC 0.840 | 5s
+  ep  17 train 0.2702 | val ord 0.3995 AUC 0.872 | 5s
+  ep  18 train 0.2638 | val ord 0.4604 AUC 0.844 | 5s
+[slice25d_lesanchor__loso__s1] unit Achieva: test AUC 0.802 (n=223) | 3.0 min
+
+[slice25d_lesanchor__loso__s1] unit Ingenia Elition X: train 532 labelled + 0 unlabelled, val 94, test 92
+  ep   0 train 0.3853 | val ord 0.4412 AUC 0.790 | 52s
+  ep   1 train 0.3960 | val ord 0.4427 AUC 0.787 | 5s
+  ep   2 train 0.3822 | val ord 0.4371 AUC 0.788 | 5s
+  ep   3 train 0.4070 | val ord 0.4412 AUC 0.787 | 5s
+  ep   4 train 0.3661 | val ord 0.5333 AUC 0.793 | 5s
+  ep   5 train 0.3674 | val ord 0.4834 AUC 0.793 | 5s
+  ep   6 train 0.3532 | val ord 0.4887 AUC 0.787 | 5s
+  ep   7 train 0.3534 | val ord 0.4742 AUC 0.789 | 5s
+  ep   8 train 0.3335 | val ord 0.4632 AUC 0.809 | 5s
+  ep   9 train 0.3211 | val ord 0.5298 AUC 0.775 | 5s
+  ep  10 train 0.3266 | val ord 0.5310 AUC 0.782 | 5s
+  ep  11 train 0.3326 | val ord 0.5115 AUC 0.808 | 5s
+  ep  12 train 0.3354 | val ord 0.5104 AUC 0.793 | 5s
+[slice25d_lesanchor__loso__s1] unit Ingenia Elition X: test AUC 0.805 (n=92) | 2.7 min
+
+[slice25d_lesanchor__loso__s1] unit Intera: train 569 labelled + 0 unlabelled, val 100, test 49
+  ep   0 train 0.3863 | val ord 0.4238 AUC 0.860 | 40s
+  ep   1 train 0.3981 | val ord 0.4215 AUC 0.861 | 5s
+  ep   2 train 0.3876 | val ord 0.5494 AUC 0.831 | 5s
+  ep   3 train 0.3947 | val ord 0.4507 AUC 0.834 | 5s
+  ep   4 train 0.4121 | val ord 0.4239 AUC 0.867 | 5s
+  ep   5 train 0.3900 | val ord 0.4126 AUC 0.862 | 5s
+  ep   6 train 0.3823 | val ord 0.4152 AUC 0.878 | 5s
+  ep   7 train 0.3883 | val ord 0.5308 AUC 0.855 | 5s
+  ep   8 train 0.3777 | val ord 0.4446 AUC 0.877 | 5s
+  ep   9 train 0.3444 | val ord 0.3881 AUC 0.897 | 5s
+  ep  10 train 0.3647 | val ord 0.3968 AUC 0.915 | 5s
+  ep  11 train 0.3638 | val ord 0.3772 AUC 0.905 | 5s
+  ep  12 train 0.3429 | val ord 0.4094 AUC 0.897 | 5s
+  ep  13 train 0.3255 | val ord 0.5503 AUC 0.875 | 5s
+  ep  14 train 0.3438 | val ord 0.5133 AUC 0.885 | 5s
+  ep  15 train 0.3280 | val ord 0.5072 AUC 0.878 | 5s
+  ep  16 train 0.3246 | val ord 0.4116 AUC 0.892 | 5s
+  ep  17 train 0.3089 | val ord 0.4020 AUC 0.897 | 5s
+  ep  18 train 0.3162 | val ord 0.6716 AUC 0.886 | 5s
+  ep  19 train 0.2962 | val ord 0.4568 AUC 0.867 | 5s
+  ep  20 train 0.2794 | val ord 0.4502 AUC 0.878 | 5s
+  ep  21 train 0.3034 | val ord 0.4091 AUC 0.865 | 5s
+[slice25d_lesanchor__loso__s1] unit Intera: test AUC 0.828 (n=49) | 3.1 min
+
+Saved results/oof/slice25d_lesanchor__loso__s1.csv

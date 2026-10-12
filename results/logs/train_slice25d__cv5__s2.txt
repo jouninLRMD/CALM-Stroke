@@ -1,0 +1,105 @@
+device cuda NVIDIA RTX 4000 Ada Generation
+
+[slice25d__cv5__s2] unit fold0: train 488 labelled + 0 unlabelled, val 86, test 144
+  ep   0 train 0.4496 | val ord 0.4548 AUC 0.690 | 63s
+  ep   1 train 0.4479 | val ord 0.4522 AUC 0.692 | 5s
+  ep   2 train 0.4184 | val ord 0.4249 AUC 0.730 | 5s
+  ep   3 train 0.3770 | val ord 0.5007 AUC 0.713 | 5s
+  ep   4 train 0.3812 | val ord 0.4636 AUC 0.750 | 5s
+  ep   5 train 0.3657 | val ord 0.5370 AUC 0.700 | 5s
+  ep   6 train 0.3744 | val ord 0.4614 AUC 0.746 | 5s
+  ep   7 train 0.3740 | val ord 0.5594 AUC 0.709 | 5s
+  ep   8 train 0.3483 | val ord 0.4716 AUC 0.707 | 5s
+  ep   9 train 0.3383 | val ord 0.4578 AUC 0.724 | 5s
+  ep  10 train 0.3393 | val ord 0.6330 AUC 0.757 | 5s
+  ep  11 train 0.3198 | val ord 0.4671 AUC 0.745 | 5s
+  ep  12 train 0.3298 | val ord 0.4477 AUC 0.735 | 5s
+[slice25d__cv5__s2] unit fold0: test AUC 0.755 (n=144) | 2.7 min
+
+[slice25d__cv5__s2] unit fold1: train 488 labelled + 0 unlabelled, val 86, test 144
+  ep   0 train 0.4622 | val ord 0.4235 AUC 0.783 | 65s
+  ep   1 train 0.4407 | val ord 0.4218 AUC 0.787 | 5s
+  ep   2 train 0.4250 | val ord 0.4212 AUC 0.817 | 5s
+  ep   3 train 0.4134 | val ord 0.4414 AUC 0.821 | 5s
+  ep   4 train 0.4073 | val ord 0.4310 AUC 0.796 | 5s
+  ep   5 train 0.3869 | val ord 0.4262 AUC 0.822 | 5s
+  ep   6 train 0.3691 | val ord 0.3879 AUC 0.840 | 5s
+  ep   7 train 0.3819 | val ord 0.4069 AUC 0.806 | 5s
+  ep   8 train 0.3694 | val ord 0.4482 AUC 0.835 | 5s
+  ep   9 train 0.3383 | val ord 0.3809 AUC 0.886 | 5s
+  ep  10 train 0.3264 | val ord 0.5679 AUC 0.829 | 5s
+  ep  11 train 0.3341 | val ord 0.4686 AUC 0.788 | 5s
+  ep  12 train 0.3475 | val ord 0.4051 AUC 0.849 | 5s
+  ep  13 train 0.3040 | val ord 0.4092 AUC 0.853 | 5s
+  ep  14 train 0.3177 | val ord 0.4839 AUC 0.858 | 5s
+  ep  15 train 0.3125 | val ord 0.4229 AUC 0.853 | 5s
+  ep  16 train 0.3120 | val ord 0.5619 AUC 0.846 | 5s
+  ep  17 train 0.3142 | val ord 0.4408 AUC 0.849 | 5s
+  ep  18 train 0.3227 | val ord 0.4114 AUC 0.872 | 5s
+  ep  19 train 0.2850 | val ord 0.4316 AUC 0.832 | 5s
+[slice25d__cv5__s2] unit fold1: test AUC 0.873 (n=144) | 3.1 min
+
+[slice25d__cv5__s2] unit fold2: train 488 labelled + 0 unlabelled, val 86, test 144
+  ep   0 train 0.4431 | val ord 0.4420 AUC 0.732 | 47s
+  ep   1 train 0.4095 | val ord 0.4406 AUC 0.734 | 5s
+  ep   2 train 0.4156 | val ord 0.4703 AUC 0.698 | 5s
+  ep   3 train 0.3868 | val ord 0.4592 AUC 0.709 | 5s
+  ep   4 train 0.3888 | val ord 0.4540 AUC 0.695 | 5s
+  ep   5 train 0.3594 | val ord 0.4836 AUC 0.702 | 5s
+  ep   6 train 0.3729 | val ord 0.4353 AUC 0.734 | 5s
+  ep   7 train 0.3405 | val ord 0.4724 AUC 0.703 | 5s
+  ep   8 train 0.3429 | val ord 0.6309 AUC 0.693 | 5s
+  ep   9 train 0.3250 | val ord 0.4762 AUC 0.734 | 5s
+  ep  10 train 0.3295 | val ord 0.4307 AUC 0.793 | 5s
+  ep  11 train 0.3332 | val ord 0.5076 AUC 0.742 | 5s
+  ep  12 train 0.2980 | val ord 0.5016 AUC 0.764 | 5s
+  ep  13 train 0.3224 | val ord 0.5336 AUC 0.702 | 5s
+  ep  14 train 0.2926 | val ord 0.4702 AUC 0.674 | 5s
+  ep  15 train 0.2720 | val ord 0.4751 AUC 0.709 | 5s
+  ep  16 train 0.2956 | val ord 0.4371 AUC 0.743 | 5s
+  ep  17 train 0.2718 | val ord 0.5504 AUC 0.716 | 5s
+  ep  18 train 0.2858 | val ord 0.4949 AUC 0.684 | 5s
+  ep  19 train 0.2561 | val ord 0.8531 AUC 0.696 | 5s
+  ep  20 train 0.2706 | val ord 0.5583 AUC 0.763 | 5s
+[slice25d__cv5__s2] unit fold2: test AUC 0.817 (n=144) | 3.1 min
+
+[slice25d__cv5__s2] unit fold3: train 489 labelled + 0 unlabelled, val 86, test 143
+  ep   0 train 0.4259 | val ord 0.4329 AUC 0.781 | 43s
+  ep   1 train 0.4352 | val ord 0.4328 AUC 0.782 | 5s
+  ep   2 train 0.4233 | val ord 0.4190 AUC 0.790 | 5s
+  ep   3 train 0.4095 | val ord 0.3846 AUC 0.824 | 5s
+  ep   4 train 0.3964 | val ord 0.3862 AUC 0.811 | 5s
+  ep   5 train 0.3709 | val ord 0.4132 AUC 0.812 | 5s
+  ep   6 train 0.3818 | val ord 0.4399 AUC 0.802 | 5s
+  ep   7 train 0.3649 | val ord 0.4044 AUC 0.804 | 5s
+  ep   8 train 0.3682 | val ord 0.4482 AUC 0.783 | 5s
+  ep   9 train 0.3417 | val ord 0.3788 AUC 0.824 | 5s
+  ep  10 train 0.3346 | val ord 0.4057 AUC 0.794 | 5s
+  ep  11 train 0.3343 | val ord 0.4502 AUC 0.748 | 5s
+  ep  12 train 0.3556 | val ord 0.4303 AUC 0.751 | 5s
+  ep  13 train 0.3199 | val ord 0.4586 AUC 0.755 | 5s
+  ep  14 train 0.3189 | val ord 0.4231 AUC 0.755 | 5s
+  ep  15 train 0.3263 | val ord 0.4247 AUC 0.734 | 5s
+  ep  16 train 0.3062 | val ord 0.4680 AUC 0.702 | 5s
+  ep  17 train 0.2957 | val ord 0.3981 AUC 0.768 | 5s
+  ep  18 train 0.2866 | val ord 0.4199 AUC 0.774 | 5s
+  ep  19 train 0.2849 | val ord 0.3859 AUC 0.820 | 5s
+[slice25d__cv5__s2] unit fold3: test AUC 0.827 (n=143) | 2.9 min
+
+[slice25d__cv5__s2] unit fold4: train 489 labelled + 0 unlabelled, val 86, test 143
+  ep   0 train 0.4305 | val ord 0.4411 AUC 0.710 | 45s
+  ep   1 train 0.4149 | val ord 0.4403 AUC 0.716 | 5s
+  ep   2 train 0.4091 | val ord 0.4398 AUC 0.720 | 5s
+  ep   3 train 0.4011 | val ord 0.4401 AUC 0.728 | 5s
+  ep   4 train 0.3814 | val ord 0.4509 AUC 0.765 | 5s
+  ep   5 train 0.3615 | val ord 0.4424 AUC 0.756 | 5s
+  ep   6 train 0.3712 | val ord 0.4620 AUC 0.749 | 5s
+  ep   7 train 0.3639 | val ord 0.4656 AUC 0.784 | 5s
+  ep   8 train 0.3415 | val ord 0.5734 AUC 0.689 | 5s
+  ep   9 train 0.3346 | val ord 0.5941 AUC 0.674 | 5s
+  ep  10 train 0.3387 | val ord 0.5797 AUC 0.729 | 5s
+  ep  11 train 0.3431 | val ord 0.4421 AUC 0.786 | 5s
+  ep  12 train 0.3134 | val ord 0.4581 AUC 0.724 | 5s
+[slice25d__cv5__s2] unit fold4: test AUC 0.788 (n=143) | 2.4 min
+
+Saved results/oof/slice25d__cv5__s2.csv

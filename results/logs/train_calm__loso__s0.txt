@@ -1,0 +1,156 @@
+device cuda NVIDIA RTX 4000 Ada Generation
+src/calm_stroke_model.py:136: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.fusion = nn.TransformerEncoder(layer, n_layers)
+
+[calm__loso__s0] unit Ingenia Ambition X: train 309 labelled + 416 unlabelled, val 55, test 354
+  ep   0 train 2.0941 | val ord 0.4376 AUC 0.813 | 78s
+  ep   1 train 1.8929 | val ord 0.4374 AUC 0.813 | 37s
+  ep   2 train 1.7671 | val ord 0.4372 AUC 0.812 | 38s
+  ep   3 train 1.7265 | val ord 0.4362 AUC 0.812 | 38s
+  ep   4 train 1.6128 | val ord 0.4328 AUC 0.824 | 38s
+  ep   5 train 1.5245 | val ord 0.4240 AUC 0.853 | 37s
+  ep   6 train 1.4154 | val ord 0.4094 AUC 0.867 | 37s
+  ep   7 train 1.3951 | val ord 0.4244 AUC 0.830 | 37s
+  ep   8 train 1.2584 | val ord 0.4067 AUC 0.850 | 37s
+  ep   9 train 1.2189 | val ord 0.3984 AUC 0.855 | 37s
+  ep  10 train 1.1409 | val ord 0.3897 AUC 0.871 | 37s
+  ep  11 train 1.0881 | val ord 0.4093 AUC 0.857 | 37s
+  ep  12 train 1.0713 | val ord 0.3968 AUC 0.861 | 37s
+  ep  13 train 1.0530 | val ord 0.3940 AUC 0.871 | 38s
+  ep  14 train 1.0388 | val ord 0.3723 AUC 0.881 | 37s
+  ep  15 train 1.0014 | val ord 0.4040 AUC 0.859 | 37s
+  ep  16 train 1.0129 | val ord 0.4258 AUC 0.849 | 37s
+  ep  17 train 0.9894 | val ord 0.3667 AUC 0.893 | 37s
+  ep  18 train 0.9868 | val ord 0.3785 AUC 0.870 | 37s
+  ep  19 train 0.9563 | val ord 0.3853 AUC 0.857 | 37s
+  ep  20 train 0.9273 | val ord 0.3734 AUC 0.870 | 36s
+  ep  21 train 0.8825 | val ord 0.3721 AUC 0.882 | 37s
+  ep  22 train 0.9513 | val ord 0.3837 AUC 0.881 | 37s
+  ep  23 train 0.8608 | val ord 0.4001 AUC 0.871 | 37s
+  ep  24 train 0.8676 | val ord 0.3558 AUC 0.910 | 37s
+  ep  25 train 0.8670 | val ord 0.3544 AUC 0.891 | 37s
+  ep  26 train 0.8756 | val ord 0.3796 AUC 0.859 | 37s
+  ep  27 train 0.8493 | val ord 0.3664 AUC 0.874 | 37s
+  ep  28 train 0.8472 | val ord 0.3705 AUC 0.897 | 37s
+  ep  29 train 0.8262 | val ord 0.4025 AUC 0.844 | 37s
+  ep  30 train 0.7895 | val ord 0.4261 AUC 0.844 | 37s
+  ep  31 train 0.8140 | val ord 0.3776 AUC 0.847 | 37s
+  ep  32 train 0.7542 | val ord 0.4121 AUC 0.871 | 37s
+  ep  33 train 0.7323 | val ord 0.3753 AUC 0.879 | 37s
+  ep  34 train 0.7271 | val ord 0.3731 AUC 0.891 | 37s
+  ep  35 train 0.7649 | val ord 0.3794 AUC 0.886 | 37s
+[calm__loso__s0] unit Ingenia Ambition X: test AUC 0.808 (n=354) | 23.9 min
+src/calm_stroke_model.py:136: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.fusion = nn.TransformerEncoder(layer, n_layers)
+
+[calm__loso__s0] unit Achieva: train 421 labelled + 797 unlabelled, val 74, test 223
+  ep   0 train 2.1768 | val ord 0.4419 AUC 0.743 | 79s
+  ep   1 train 1.9297 | val ord 0.4419 AUC 0.743 | 37s
+  ep   2 train 1.8533 | val ord 0.4415 AUC 0.743 | 37s
+  ep   3 train 1.7879 | val ord 0.4412 AUC 0.744 | 38s
+  ep   4 train 1.7049 | val ord 0.4402 AUC 0.755 | 38s
+  ep   5 train 1.6122 | val ord 0.4406 AUC 0.758 | 38s
+  ep   6 train 1.5396 | val ord 0.4405 AUC 0.755 | 38s
+  ep   7 train 1.5037 | val ord 0.4384 AUC 0.763 | 38s
+  ep   8 train 1.3853 | val ord 0.4392 AUC 0.752 | 38s
+  ep   9 train 1.3247 | val ord 0.4463 AUC 0.750 | 37s
+  ep  10 train 1.2687 | val ord 0.4325 AUC 0.748 | 37s
+  ep  11 train 1.1786 | val ord 0.4433 AUC 0.747 | 37s
+  ep  12 train 1.1677 | val ord 0.4463 AUC 0.757 | 37s
+  ep  13 train 1.1195 | val ord 0.4319 AUC 0.739 | 37s
+  ep  14 train 1.0261 | val ord 0.4407 AUC 0.749 | 37s
+  ep  15 train 0.9968 | val ord 0.4559 AUC 0.715 | 37s
+  ep  16 train 0.9811 | val ord 0.4321 AUC 0.750 | 38s
+  ep  17 train 0.9926 | val ord 0.4719 AUC 0.722 | 37s
+  ep  18 train 0.9672 | val ord 0.4374 AUC 0.754 | 37s
+  ep  19 train 0.9564 | val ord 0.4577 AUC 0.729 | 38s
+  ep  20 train 0.9344 | val ord 0.4327 AUC 0.746 | 38s
+  ep  21 train 0.9425 | val ord 0.4177 AUC 0.793 | 37s
+  ep  22 train 0.9045 | val ord 0.4229 AUC 0.762 | 37s
+  ep  23 train 0.8850 | val ord 0.4175 AUC 0.780 | 38s
+  ep  24 train 0.8918 | val ord 0.4563 AUC 0.762 | 38s
+  ep  25 train 0.8788 | val ord 0.4318 AUC 0.763 | 38s
+  ep  26 train 0.8490 | val ord 0.4413 AUC 0.724 | 37s
+  ep  27 train 0.8830 | val ord 0.4700 AUC 0.742 | 38s
+  ep  28 train 0.8745 | val ord 0.4386 AUC 0.741 | 37s
+  ep  29 train 0.8649 | val ord 0.4419 AUC 0.729 | 37s
+  ep  30 train 0.8492 | val ord 0.4405 AUC 0.727 | 36s
+  ep  31 train 0.8441 | val ord 0.4659 AUC 0.722 | 36s
+  ep  32 train 0.8767 | val ord 0.4446 AUC 0.732 | 37s
+  ep  33 train 0.8435 | val ord 0.4458 AUC 0.728 | 36s
+[calm__loso__s0] unit Achieva: test AUC 0.811 (n=223) | 23.0 min
+src/calm_stroke_model.py:136: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.fusion = nn.TransformerEncoder(layer, n_layers)
+
+[calm__loso__s0] unit Ingenia Elition X: train 532 labelled + 878 unlabelled, val 94, test 92
+  ep   0 train 2.3959 | val ord 0.4224 AUC 0.763 | 109s
+  ep   1 train 2.2196 | val ord 0.4222 AUC 0.763 | 38s
+  ep   2 train 2.1851 | val ord 0.4221 AUC 0.763 | 38s
+  ep   3 train 2.0077 | val ord 0.4220 AUC 0.764 | 38s
+  ep   4 train 1.9702 | val ord 0.4216 AUC 0.766 | 38s
+  ep   5 train 1.8836 | val ord 0.4228 AUC 0.766 | 38s
+  ep   6 train 1.7886 | val ord 0.4148 AUC 0.785 | 38s
+  ep   7 train 1.7230 | val ord 0.4001 AUC 0.811 | 38s
+  ep   8 train 1.6080 | val ord 0.4029 AUC 0.806 | 38s
+  ep   9 train 1.5896 | val ord 0.3996 AUC 0.810 | 38s
+  ep  10 train 1.5428 | val ord 0.4061 AUC 0.818 | 38s
+  ep  11 train 1.5371 | val ord 0.3931 AUC 0.815 | 38s
+  ep  12 train 1.4258 | val ord 0.4052 AUC 0.815 | 38s
+  ep  13 train 1.3372 | val ord 0.4269 AUC 0.820 | 38s
+  ep  14 train 1.3033 | val ord 0.3916 AUC 0.821 | 38s
+  ep  15 train 1.2418 | val ord 0.3978 AUC 0.814 | 38s
+  ep  16 train 1.1678 | val ord 0.3960 AUC 0.811 | 38s
+  ep  17 train 1.0748 | val ord 0.3886 AUC 0.827 | 38s
+  ep  18 train 1.0952 | val ord 0.3899 AUC 0.831 | 38s
+  ep  19 train 1.0194 | val ord 0.4154 AUC 0.824 | 38s
+  ep  20 train 0.9906 | val ord 0.4002 AUC 0.833 | 38s
+  ep  21 train 0.9658 | val ord 0.3867 AUC 0.825 | 38s
+  ep  22 train 0.9626 | val ord 0.3893 AUC 0.834 | 38s
+  ep  23 train 0.9477 | val ord 0.3859 AUC 0.837 | 38s
+  ep  24 train 0.9738 | val ord 0.3946 AUC 0.824 | 38s
+  ep  25 train 0.9336 | val ord 0.3958 AUC 0.817 | 38s
+  ep  26 train 0.9004 | val ord 0.4160 AUC 0.819 | 38s
+  ep  27 train 0.9187 | val ord 0.4051 AUC 0.820 | 38s
+  ep  28 train 0.8848 | val ord 0.4069 AUC 0.804 | 38s
+  ep  29 train 0.8606 | val ord 0.4145 AUC 0.808 | 38s
+  ep  30 train 0.8870 | val ord 0.3960 AUC 0.824 | 38s
+  ep  31 train 0.8299 | val ord 0.3990 AUC 0.826 | 38s
+  ep  32 train 0.9165 | val ord 0.3929 AUC 0.818 | 38s
+  ep  33 train 0.8723 | val ord 0.3999 AUC 0.826 | 38s
+[calm__loso__s0] unit Ingenia Elition X: test AUC 0.825 (n=92) | 23.4 min
+src/calm_stroke_model.py:136: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.fusion = nn.TransformerEncoder(layer, n_layers)
+
+[calm__loso__s0] unit Intera: train 569 labelled + 939 unlabelled, val 100, test 49
+  ep   0 train 2.3642 | val ord 0.4266 AUC 0.801 | 79s
+  ep   1 train 2.1040 | val ord 0.4292 AUC 0.801 | 37s
+  ep   2 train 1.9761 | val ord 0.4301 AUC 0.801 | 38s
+  ep   3 train 1.9681 | val ord 0.4255 AUC 0.801 | 38s
+  ep   4 train 1.8623 | val ord 0.4286 AUC 0.800 | 38s
+  ep   5 train 1.8084 | val ord 0.4222 AUC 0.804 | 39s
+  ep   6 train 1.7382 | val ord 0.4214 AUC 0.802 | 39s
+  ep   7 train 1.6717 | val ord 0.4097 AUC 0.820 | 39s
+  ep   8 train 1.5969 | val ord 0.4125 AUC 0.828 | 38s
+  ep   9 train 1.5205 | val ord 0.4149 AUC 0.824 | 39s
+  ep  10 train 1.4610 | val ord 0.4198 AUC 0.823 | 39s
+  ep  11 train 1.4072 | val ord 0.4138 AUC 0.827 | 41s
+  ep  12 train 1.3510 | val ord 0.4107 AUC 0.833 | 41s
+  ep  13 train 1.2925 | val ord 0.4334 AUC 0.833 | 42s
+  ep  14 train 1.1753 | val ord 0.4137 AUC 0.831 | 43s
+  ep  15 train 1.1479 | val ord 0.4089 AUC 0.830 | 43s
+  ep  16 train 1.0704 | val ord 0.4240 AUC 0.834 | 43s
+  ep  17 train 1.0545 | val ord 0.4082 AUC 0.841 | 43s
+  ep  18 train 1.0244 | val ord 0.4048 AUC 0.836 | 43s
+  ep  19 train 1.0282 | val ord 0.4054 AUC 0.836 | 43s
+  ep  20 train 1.0217 | val ord 0.4363 AUC 0.828 | 43s
+  ep  21 train 0.9534 | val ord 0.4107 AUC 0.828 | 45s
+  ep  22 train 0.9653 | val ord 0.4519 AUC 0.794 | 45s
+  ep  23 train 1.0047 | val ord 0.4264 AUC 0.820 | 45s
+  ep  24 train 0.9276 | val ord 0.4214 AUC 0.809 | 45s
+  ep  25 train 0.8774 | val ord 0.4870 AUC 0.776 | 45s
+  ep  26 train 0.9237 | val ord 0.4283 AUC 0.801 | 45s
+  ep  27 train 0.9411 | val ord 0.4177 AUC 0.812 | 45s
+  ep  28 train 0.8928 | val ord 0.4145 AUC 0.823 | 45s
+[calm__loso__s0] unit Intera: test AUC 0.787 (n=49) | 21.4 min
+
+Saved results/oof/calm__loso__s0.csv
