@@ -1,8 +1,15 @@
 # CALM-Stroke
 
-Code and results for **"CALM-Stroke: Clinically Anchored, Lesion-Aware Deep Learning on Diffusion MRI for Predicting Functional Outcome after Acute Ischemic Stroke"** (L. R. Mercado-Diaz, L. S. Donado Pinto, C. Barrera-Causil, H. F. Posada-Quintero; submitted to the IEEE Journal of Biomedical and Health Informatics).
+Code and results for **"Clinically Anchored Deep Learning with a Pretrained 2.5D Diffusion MRI Representation for Predicting Functional Outcome after Acute Ischemic Stroke"** (L. R. Mercado-Diaz, L. S. Donado Pinto, C. Barrera-Causil, H. F. Posada-Quintero; submitted to the IEEE Journal of Biomedical and Health Informatics).
 
-CALM-Stroke reads the admission DWI trace image and the relative ADC map with a pretrained 2.5D slice encoder, predicts the acute lesion, summarizes it inside 32 arterial territories as tokens that a transformer combines with clinical tokens, and adds the result as a correction to a clinical logistic model fitted inside each training fold. Everything here runs on the public [Stroke Outcome Optimization Project (SOOP)](https://openneuro.org/datasets/ds004889/versions/1.1.2) release, so every number in the paper can be regenerated from scratch.
+The Clinically Anchored, Lesion-Aware, Multitask Stroke (CALM-Stroke) network reads the admission DWI trace image and the relative ADC map with a pretrained 2.5D slice encoder, predicts the acute lesion, summarizes it inside 32 arterial territories as tokens that a transformer combines with clinical tokens, and adds the result as a correction to a clinical logistic model fitted inside each training fold. Everything here runs on the public [Stroke Outcome Optimization Project (SOOP)](https://openneuro.org/datasets/ds004889/versions/1.1.2) release, so every number in the paper can be regenerated from scratch.
+
+**Main findings** (718 patients, discharge mRS 3 to 6):
+
+* In five-fold cross-validation, CALM-Stroke reached an AUC of 0.827, against 0.756 for the clinical model and 0.798 for the clinical model with expert lesion descriptors (AUC improvement 0.028, 95% CI 0.009 to 0.049). Calibration was close to ideal (slope 1.08, intercept 0.12).
+* In internal-external validation across scanner models (leave one scanner model out) it reached 0.826, and trained at 1.5 T and tested at 3 T it reached 0.851. Both experiments are within one center, so they show robustness to scanner and field-strength shifts in this dataset, not generalization across hospitals.
+* An anchored 2.5D network without the lesion-aware components (0.826) and a late fusion of an image-only 2.5D network with the clinical variables (0.831) showed comparable discrimination, and the image-only network reached 0.820. Occluding the territory tokens did not measurably change the predictions, and removing the auxiliary tasks gave 0.837.
+* The improvement therefore comes from the pretrained 2.5D diffusion MRI representation combined with clinical information, not from the lesion-aware or multitask components. The repository includes every comparator and ablation so this can be checked.
 
 ## What is in the repository
 
@@ -101,8 +108,8 @@ If you use this code, please cite the paper (the reference will be updated after
 
 ```
 L. R. Mercado-Diaz, L. S. Donado Pinto, C. Barrera-Causil and H. F. Posada-Quintero,
-"CALM-Stroke: Clinically anchored, lesion-aware deep learning on diffusion MRI for predicting functional
-outcome after acute ischemic stroke," submitted to IEEE J. Biomed. Health Inform., 2026.
+"Clinically anchored deep learning with a pretrained 2.5D diffusion MRI representation for predicting
+functional outcome after acute ischemic stroke," submitted to IEEE J. Biomed. Health Inform., 2026.
 ```
 
 ## License
