@@ -27,6 +27,8 @@ src/train.py               all networks: CALM-Stroke, 2.5D MIL, CALM-3D, 3D ResN
 src/evaluate.py            AUC with bootstrap CIs, paired differences, calibration, ordinal metrics, subgroups, decision curves
 src/paper_outputs.py       figures, table bodies and number macros of the manuscript
 src/explain.py             lesion-map agreement, territory-token occlusion and the late-fusion comparator
+src/bayes_equivalence.py   Bayesian bootstrap of paired AUC differences with a region of practical equivalence
+src/scanner_meta_selection.py  Bayesian meta-analysis of the AUC across held-out scanner models and inverse probability weighting
 results/                   out-of-fold predictions of every model in the paper, cohort table, logs and manuscript outputs
 ```
 
@@ -68,6 +70,7 @@ python reproduce.py --dry-run  # list the commands without running them
 | `evaluate` | all metrics and `results/report.md` | 10 to 20 min |
 | `paper` | `results/paper`: Figs. 5 to 8, Tables I to III and the number macros | 10 min |
 | `explain` | `results/explain`: Fig. 9 data, late fusion and the image-only network (Table II) | 15 min on the GPU |
+| `bayes` | `results/paper`: Bayesian equivalence (figure and supplementary figure), scanner meta-analysis and selection weighting, with their number macros | 2 min |
 
 Finished training runs are skipped, so the command can be interrupted and started again. `--models calm25d` limits training to one model family and `--force` retrains existing runs.
 
@@ -76,7 +79,7 @@ Finished training runs are skipped, so the command can be interrupted and starte
 The out-of-fold predictions of every model in the paper are included in `results/oof`. To recompute all tables, figures and numbers from them:
 
 ```bash
-python reproduce.py --only evaluate paper
+python reproduce.py --only evaluate paper bayes
 ```
 
 ## Models and runs

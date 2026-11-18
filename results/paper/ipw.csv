@@ -1,0 +1,6 @@
+,unweighted,weighted,lo,hi
+CALM-Stroke,0.8268,0.8232,0.7911,0.8550
+2.5D MIL + anchor,0.8257,0.8196,0.7876,0.8510
+Clinical + lesion (R1b),0.7983,0.7928,0.7581,0.8254
+Clinical (R0),0.7558,0.7554,0.7171,0.7914
+diff_calm_R1b,,0.0304,0.0113,0.0528

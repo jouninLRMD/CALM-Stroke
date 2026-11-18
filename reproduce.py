@@ -13,6 +13,7 @@ Stages, in order:
   evaluate    metrics, bootstrap intervals, subgroups and decision curves
   paper       manuscript figures, table bodies and number macros (results/paper)
   explain     lesion-map agreement, territory-token occlusion and the late-fusion comparator (GPU)
+  bayes       Bayesian equivalence of paired AUCs, scanner-level meta-analysis and selection weighting
 
 Usage (from the repository root):
   python reproduce.py                          # everything
@@ -29,7 +30,7 @@ REPO = Path(__file__).resolve().parent
 SRC, SCRIPTS = REPO / "src", REPO / "scripts"
 RES = Path(os.environ.get("CALM_RESULTS", str(REPO / "results")))
 STAGES = ["download", "atlas", "preprocess", "cohort", "features", "baselines", "cache", "train", "evaluate", "paper",
-          "explain"]
+          "explain", "bayes"]
 N_UNITS = {"cv5": 5, "loso": 4, "field": 1}
 
 # (model, extra flags, {scheme: seeds}) exactly as used for the paper
@@ -131,6 +132,10 @@ def main():
             run([py, SRC / "paper_outputs.py"], log=RES / "logs" / "paper_outputs.txt", dry=a.dry_run)
         elif st == "explain":
             run([py, SRC / "explain.py"], log=RES / "logs" / "explain.txt", dry=a.dry_run)
+        elif st == "bayes":
+            run([py, SRC / "bayes_equivalence.py", REPO], log=RES / "logs" / "bayes_equivalence.txt", dry=a.dry_run)
+            run([py, SRC / "scanner_meta_selection.py", REPO], log=RES / "logs" / "scanner_meta_selection.txt",
+                dry=a.dry_run)
     print("\nFinished. Main report: results/report.md; manuscript outputs: results/paper and results/explain")
 
 

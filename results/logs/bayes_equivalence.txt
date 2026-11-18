@@ -1,0 +1,28 @@
+patients: 718 events: 337
+              reference                               model   auc  d_mean   d_lo   d_hi  p_worse_0.02  p_rope_0.02  p_better_0.02  p_gt0
+Clinical + lesion (R1b)                         CALM-Stroke 0.827   0.029  0.009  0.049         0.000        0.195          0.805  0.998
+Clinical + lesion (R1b)                   2.5D MIL + anchor 0.826   0.028  0.006  0.050         0.000        0.243          0.757  0.994
+Clinical + lesion (R1b)            2.5D MIL + lesion anchor 0.818   0.020  0.010  0.030         0.000        0.493          0.507  1.000
+Clinical + lesion (R1b)     CALM-Stroke, no auxiliary tasks 0.837   0.039  0.017  0.061         0.000        0.050          0.950  1.000
+Clinical + lesion (R1b)         CALM-Stroke, no lesion head 0.826   0.028  0.007  0.050         0.000        0.237          0.763  0.996
+Clinical + lesion (R1b)              CALM-Stroke, no anchor 0.811   0.012 -0.016  0.042         0.012        0.681          0.306  0.801
+Clinical + lesion (R1b)              CALM-3D (from scratch) 0.805   0.007 -0.011  0.025         0.003        0.932          0.066  0.761
+Clinical + lesion (R1b)               3D ResNet-18 + anchor 0.778  -0.020 -0.042  0.003         0.498        0.501          0.000  0.043
+Clinical + lesion (R1b)         Clinical + topography (R2b) 0.794  -0.004 -0.019  0.010         0.022        0.977          0.001  0.272
+Clinical + lesion (R1b)              Clinical + volume (R1) 0.795  -0.003 -0.012  0.007         0.000        1.000          0.000  0.255
+Clinical + lesion (R1b)                       Clinical (R0) 0.756  -0.042 -0.068 -0.015         0.946        0.054          0.000  0.001
+Clinical + lesion (R1b) Late fusion (image only + clinical) 0.831   0.033  0.009  0.056         0.000        0.140          0.860  0.997
+Clinical + lesion (R1b)            2.5D network, image only 0.820   0.022 -0.008  0.051         0.005        0.453          0.543  0.925
+            CALM-Stroke                   2.5D MIL + anchor 0.826  -0.001 -0.014  0.012         0.004        0.996          0.001  0.442
+            CALM-Stroke            2.5D MIL + lesion anchor 0.818  -0.009 -0.027  0.009         0.105        0.894          0.001  0.174
+            CALM-Stroke     CALM-Stroke, no auxiliary tasks 0.837   0.010 -0.003  0.023         0.000        0.942          0.058  0.939
+            CALM-Stroke         CALM-Stroke, no lesion head 0.826  -0.001 -0.013  0.012         0.001        0.999          0.000  0.447
+            CALM-Stroke              CALM-Stroke, no anchor 0.811  -0.016 -0.041  0.008         0.385        0.612          0.003  0.102
+            CALM-Stroke              CALM-3D (from scratch) 0.805  -0.022 -0.039 -0.006         0.596        0.405          0.000  0.005
+            CALM-Stroke               3D ResNet-18 + anchor 0.778  -0.049 -0.066 -0.031         1.000        0.001          0.000  0.000
+            CALM-Stroke         Clinical + topography (R2b) 0.794  -0.033 -0.053 -0.014         0.909        0.091          0.000  0.000
+            CALM-Stroke              Clinical + volume (R1) 0.795  -0.032 -0.051 -0.013         0.886        0.114          0.000  0.001
+            CALM-Stroke             Clinical + lesion (R1b) 0.798  -0.029 -0.049 -0.009         0.805        0.195          0.000  0.002
+            CALM-Stroke                       Clinical (R0) 0.756  -0.071 -0.091 -0.051         1.000        0.000          0.000  0.000
+            CALM-Stroke Late fusion (image only + clinical) 0.831   0.004 -0.016  0.023         0.009        0.942          0.049  0.663
+            CALM-Stroke            2.5D network, image only 0.820  -0.007 -0.035  0.020         0.181        0.794          0.025  0.302

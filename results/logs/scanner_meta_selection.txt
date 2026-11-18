@@ -1,0 +1,29 @@
+                      model             scanner    n    auc     lo     hi
+0               CALM-Stroke             Achieva  223  0.838  0.782  0.887
+1               CALM-Stroke  Ingenia Ambition X  354  0.818  0.773  0.859
+2               CALM-Stroke   Ingenia Elition X   92  0.828  0.734  0.906
+3               CALM-Stroke              Intera   49  0.857  0.737  0.954
+4         2.5D MIL + anchor             Achieva  223  0.830  0.774  0.879
+5         2.5D MIL + anchor  Ingenia Ambition X  354  0.807  0.762  0.853
+6         2.5D MIL + anchor   Ingenia Elition X   92  0.809  0.713  0.891
+7         2.5D MIL + anchor              Intera   49  0.846  0.719  0.943
+8   Clinical + lesion (R1b)             Achieva  223  0.817  0.757  0.870
+9   Clinical + lesion (R1b)  Ingenia Ambition X  354  0.778  0.728  0.825
+10  Clinical + lesion (R1b)   Ingenia Elition X   92  0.804  0.699  0.898
+11  Clinical + lesion (R1b)              Intera   49  0.815  0.674  0.921
+12            Clinical (R0)             Achieva  223  0.772  0.707  0.833
+13            Clinical (R0)  Ingenia Ambition X  354  0.736  0.684  0.788
+14            Clinical (R0)   Ingenia Elition X   92  0.775  0.668  0.867
+15            Clinical (R0)              Intera   49  0.776  0.641  0.892
+                     model  k     mu  mu_lo  mu_hi  pi_lo  pi_hi  tau_med  tau_hi  p_new_gt_08
+0              CALM-Stroke  4  0.829  0.776  0.875  0.725  0.903    0.140   0.512        0.823
+1        2.5D MIL + anchor  4  0.818  0.764  0.864  0.715  0.893    0.132   0.496        0.732
+2  Clinical + lesion (R1b)  4  0.798  0.740  0.851  0.682  0.885    0.151   0.522        0.468
+3            Clinical (R0)  4  0.757  0.696  0.814  0.637  0.852    0.137   0.492        0.131
+                         unweighted  weighted     lo     hi
+CALM-Stroke                   0.827     0.823  0.791  0.855
+2.5D MIL + anchor             0.826     0.820  0.788  0.851
+Clinical + lesion (R1b)       0.798     0.793  0.758  0.825
+Clinical (R0)                 0.756     0.755  0.717  0.791
+diff_calm_R1b                   NaN     0.030  0.011  0.053
+selection AUC 0.678 ESS 682.8 n sessions 1062 weighted median NIHSS 7.9 vs 8.9
